@@ -1,0 +1,62 @@
+Mapping an Entity-Relationship Diagram (ERD) 
+-Entities and Attributes:
+
+-User
+UserID (Primary Key)
+Username
+Password
+Email
+Full Name
+
+-Course 
+CourseID (Primary Key)
+Course Name
+Description
+Instructor
+
+-Enrollment
+EnrollmentID (Primary Key)
+UserID (Foreign Key)
+CourseID (Foreign Key)
+Enrollment Date
+
+-Relationships:
+
+User - Registration
+One-to-One relationship. 
+User - Login
+One-to-One relationship.
+
+User - Enrollment
+One-to-Many relationship.
+
+Course - Enrollment
+One-to-Many relationship. 
+
+Relational Database Schema:(SQL)
+User Table:
+CREATE TABLE User (
+    UserID INT PRIMARY KEY,
+    Username VARCHAR(255) NOT NULL,
+    Password VARCHAR(255) NOT NULL,
+    Email VARCHAR(255) NOT NULL,
+    FullName VARCHAR(255) NOT NULL
+);
+
+Course Table:
+CREATE TABLE Course (
+    CourseID INT PRIMARY KEY,
+    CourseName VARCHAR(255) NOT NULL,
+    Description TEXT,
+    Instructor VARCHAR(255) NOT NULL
+);
+
+Enrollment Table:
+CREATE TABLE Enrollment (
+    EnrollmentID INT PRIMARY KEY,
+    UserID INT,
+    CourseID INT,
+    EnrollmentDate DATE,
+    FOREIGN KEY (UserID) REFERENCES User (UserID),
+    FOREIGN KEY (CourseID) REFERENCES Course (CourseID)
+);

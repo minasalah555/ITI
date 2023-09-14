@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+.flex-h-center {
+  align-items: center;
+}
+.flex-v-center {
+  justify-content: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.button {
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #b52d01;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+}
+.button:hover {
+  background-color: orangered;
+}
+
+.font-lg {
+  font-size: 2.5rem;
+}
+.font-md {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.font-sm {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.course-header {
+}
+.course-header .container .left > * {
+  margin: 20px;
+}
+.course-header .info {
+  padding: 10px 20px;
+  background-color: lightgray;
+  width: 70%;
+  transform: skewX(-15deg);
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-right: 5px solid gold;
+}
+
+.course-header .info > * {
+  flex-basis: calc(90% / 2);
+  font-size: 1.2rem;
+}
+
+.course-header .info i {
+  font-size: 1.7rem;
+}
+
+.course-header .info :is(p, .hours) {
+  font-size: 0.9rem;
+  color: #6d6d6d;
+}
+
+.section-left {
+  background-color: #475b65;
+  color: white;
+}
+.section-left__content {
+  margin: 40px auto;
+  width: 50%;
+  line-height: 2;
+}
+.section-left__content h3 {
+  font-size: 2.3rem;
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+  position: relative;
+}
+.section-left__content p {
+}
+.section-left__content span {
+  color: gold;
+}
+
+.section-right__form form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.section-right__form > input:not([type="submit"]) {
+  padding: 20px 10px;
+  width: calc(90% / 2);
+  border: 1px solid #a1a1a1;
+  margin: 10px 0;
+}
+.section-right__form select {
+  padding: 20px 10px;
+  border: 1px solid #a1a1a1;
+  margin: 10px 0;
+}
+.button {
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #b52d01;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+}
+.button:hover {
+  background-color: orangered;
+}
+
+.section-right__form input[type="submit"] {
+}
+.section-right__form input[type="submit"]:hover {
+}
+
+.section-right__form .qa {
+  background-color: #e1e1e1;
+  padding: 10px 20px;
+  margin: 10px 0;
+}
+
+.section-right__form .qa p {
+  color: #000000;
+  margin: 30px 0;
+}
+
+.section-right__form .qa input {
+  margin: 0 20px;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(166, 166, 166, 0.86);
+}
+.section-right__form .button {
+  margin: 10px 0;
+}
+.links {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.243);
+}
+.links ul {
+  width: 80%;
+  margin-left: auto;
+  list-style: none;
+}
+
+.links ul li {
+  padding: 20px;
+}
+
+section.about {
+}
+section.about .container-50 {
+  width: 50%;
+  margin: auto;
+}
+
+section.about .container-50 h3 {
+  font-size: 3rem;
+  margin: 15px 0;
+}
+
+section.about .container-50 p {
+  line-height: 1.5;
+}
+
+section.about .container-50 img {
+  margin: 20px 0;
+}
+.certificate-about {
+  margin: 30px 0;
+}
